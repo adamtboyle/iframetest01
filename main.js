@@ -27,7 +27,7 @@ function onClick(e) {
 }
 
 function postClickMessage(value) {
-    window.postMessage('Hello Post Function');
+    window.parent.postMessage('Hello Post Function', '*');
 }
 
 function receiveMessage(e) {
